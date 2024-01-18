@@ -6,7 +6,122 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
     <title>Architecture</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    body{
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .wrapper{
+        height:100vh;
+        overflow-y: auto;
+        overflow-x:hidden;
+        perspective: 10px;
+    }
+    header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        transform-style: preserve-3d;
+        z-index: -1;
+    }
+    .bg{
+        transform: translateZ(-10px) scale(2.5);
+    }
+    .fg{
+        transform: translateZ(-5px)scale(1.5);
+    }
+    .bg,.fg{
+        position: absolute;
+        height: 100%;
+        width: 1005;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .title{
+        font-size:7rem;
+        color:white;
+        text-shadow: 0 0 5px black;
+    }
+    section{
+        font-size: 2rem;
+        padding: 2rem;
+        background-color: #000000;
+        color:white;
+        text-align: center;
+    }
+    h5{
+        transform: translateY(-10px);
+    }
+    #img1{
+        height: 100vh;
+        filter:grayscale(1);
+        border-radius: 100%;
+        transition: filter 0.7s ease, border-radius 0.7s ease,border-color 0.7s ease;
+        border:#333 10px solid;
+    }
+    #img1:hover{
+        filter:none ;
+        border-radius: 30px;
+        border-color: white;
+    }
+    emph{
+        background-image: linear-gradient(43deg, rgb(65, 207, 250) 0%, rgb(224, 106, 234) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:transparent;
+            font-weight: 800;
+    }
+    .hr{
+        font-family: 'Impact';
+        text-shadow: 0 0 0 black;
+    }
+    iframe{
+        border-radius: 8px;
+    }
+</style>
 <body>
-    <div class="sketchfab-embed-wrapper"> <iframe title="Taj Mahal" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b2445b2419fe4ca19b38876347485589/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/taj-mahal-b2445b2419fe4ca19b38876347485589?utm_medium=embed&utm_campaign=share-popup&utm_content=b2445b2419fe4ca19b38876347485589" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Taj Mahal </a> by <a href="https://sketchfab.com/zhangshangbin1314159?utm_medium=embed&utm_campaign=share-popup&utm_content=b2445b2419fe4ca19b38876347485589" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Zhang Shangbin </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=b2445b2419fe4ca19b38876347485589" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+    <div class="wrapper">
+        <header>
+            <img src="bg.jpg" class="bg">
+            <img src="fg.png" class="fg">
+            <h1 class="title">Architecture</h1>
+        </header>
+        <section>
+            <h1>Colonial Architecture</h1>
+            <h5>Victorian-era buildings in Kolkata</h5>
+            <img src="Kolkata-Writers-Building.webp" alt="damn this pc aint loadin' this picture anytime soon." id="img1">
+            <h1 class="hr">✨Honest Reviews✨</h1>
+            <p><emph>Victoria Memorial (1921)</emph>:
+                <br>
+                A fancy marble building with a mix of British and Indian styles, surrounded by gardens. It's now a museum.😐
+                <br>
+                <br>
+                <emph>St. Paul's Cathedral (1847):</emph>
+                <br>
+                A big church with pointy tops and colorful windows.. which the british constructed🙃
+                <br>
+                <br>
+                <emph>Writer's Building:</emph>
+                <br>
+                Used to be the office for the British East India Company, and later became the government office for West Bengal.😄</p>
+                <h6>Next Up Is...</h6>
+                <h1>Indo-Islamic Architecture</h1>
+            <h5>⬇ This image is pretty boring and interesting.. at the same time. ⬇</h5>
+            <img src="f577d1e8d9a0956094d95068ff0d559b.jpg" alt="damn this pc aint loadin' this picture anytime soon." id="img1">
+            <div class="sketchfab-embed-wrapper"> <iframe title="Taj Mahal" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/459a06f893cd410dabc21f39ad5b9fea/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/taj-mahal-459a06f893cd410dabc21f39ad5b9fea?utm_medium=embed&utm_campaign=share-popup&utm_content=459a06f893cd410dabc21f39ad5b9fea" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Taj Mahal </a> by <a href="https://sketchfab.com/pinnaclecgarts?utm_medium=embed&utm_campaign=share-popup&utm_content=459a06f893cd410dabc21f39ad5b9fea" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Pinnacle CG Arts </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=459a06f893cd410dabc21f39ad5b9fea" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+            <h1><emph>Jokes Aside.. </emph>Here's The Explanation.</h1>
+            <p><emph>Indo-Islamic</emph> architecture reflects a fusion of Islamic design principles with existing <emph>Indian styles.</emph> This blend is evident in features such as domes, arches, minarets, and intricate <emph>geometric patterns</emph>.</p>
+            <h6>Last One..</h6>
+                <h1>Temples</h1>
+            <h5>Short one liners about temples.</h5>
+            <img src="f577d1e8d9a0956094d95068ff0d559b.jpg" alt="damn this pc aint loadin' this picture anytime soon." id="img1">
+            <h5>PPT By <emph>Vedesh</emph></h5>
+        </section>
+        
+    </div>
 </body>
 </html>
